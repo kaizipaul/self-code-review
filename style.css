@@ -26,7 +26,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  border: 1px solid rgb(233, 217, 217);
   border-radius: 5px;
   height: 100vh;
   width: 100vw;
@@ -64,6 +64,13 @@ html {
   background-color: rgb(200, 200, 220);
   flex-grow: 1;
   margin-bottom: 20px;
+  background-image:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url("./assets/images/space.png");
 }
 
 .form-container > .survey-form {
@@ -135,7 +142,6 @@ html {
   border-radius: 2px;
   align-items: center;
   justify-content: center;
-  width: 100%;
   font-family: 'Poppins', sans-serif;
   padding: 0.5rem;
 }
@@ -164,5 +170,4 @@ html {
   margin-left: 10px;
   margin-bottom: 5px;
   background: rgb(233, 217, 217);
-  width: 98%;
 }

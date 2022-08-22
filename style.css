@@ -1,46 +1,168 @@
-:root{
-    background-color: aliceblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
-#form-container{
-    width:400px;
-    height: 500px;
-    display:flex;
-    border:3px solid black; 
-    border-radius: 15px;
-    margin:0 auto;
-    background-color: blue;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-#name-label{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
+
+html {
+  box-sizing: border-box;
 }
-#number-label{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
+
+:root {
+  background-color: #3c3a39;
+  width: 100vw;
 }
-#app{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 100vh;
+  width: 100vw;
 }
-#software{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
-}#adds{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
-}#textarea{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
+
+.title {
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: aquamarine;
+  width: 300px;
+  margin: auto;
+  justify-content: center;
 }
-#submit{
-cursor: pointer;
-padding: 3;
-color:gray;
-box-shadow: 0 6px black;
+
+.description {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  margin: auto;
+  color: white;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.form-container {
+  align-items: center;
+  flex-direction: row;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  border: 1px solid rgb(202, 194, 194);
+  border-radius: 5px;
+  margin: auto;
+  background-color: rgb(200, 200, 220);
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.form-container > .survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container > .survey-form > .name-label,
+.form-container > .survey-form > .ads,
+.form-container > .survey-form > .textarea-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.form-container > .survey-form > .name {
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid white;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background: rgb(233, 217, 217);
+}
+
+.form-container > .survey-form > .number-label,
+.form-container > .survey-form > .software {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.form-container > .survey-form > .number {
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid white;
+  margin-left: 10px;
+  background: rgb(233, 217, 217);
+  margin-bottom: 5px;
+}
+
+.form-container > .survey-form > .email-label,
+.form-container > .survey-form > .drop-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.form-container > .survey-form > .email,
+.form-container > .survey-form > .dropdown {
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid white;
+  margin-left: 10px;
+  background: rgb(233, 217, 217);
+}
+
+.submit {
+  cursor: pointer;
+  color: gray;
+  box-shadow: 0 6px black;
+  margin-left: 10px;
+  display: flex;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem;
+}
+
+.form-container > .survey-form > .app > .value-1,
+.form-container > .survey-form > .software > .value-2,
+.form-container > .survey-form > .ads > .value-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-container > .survey-form > .app {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.form-container > .survey-form > .textarea {
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid white;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background: rgb(233, 217, 217);
+  width: 97%;
 }
